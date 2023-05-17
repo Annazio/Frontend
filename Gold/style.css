@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    height: 950px;
+    background: url(./media/bgc.png) center no-repeat;
+    background-size: cover;
+    padding: 25px 0 30px;
+}
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.dflex {
+    display: flex;
+} 
+.right {
+display: flex;
+justify-content: end;
+}
+.title {
+    text-align: center;
+}
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-menu a {
+    color: white;
+    text-decoration: none;
+    margin-right: 40px;
+}
+.top-menu a:last-child {
+    margin-right: 0;
+}
+.search-input {
+width: 45px;
+color: white;
+background: none;
+box-shadow: none;
+outline: none;
+border: 0;
+}
+.search-input::placeholder{
+color: white;
+}
+.search-btn {
+text-indent: -9999px;
+width: 18px;
+height: 18px;
+background: url(./media/Поиск.png) no-repeat center;  
+border: 0;
+}
+.brands {
+border-top: 1px solid white;
+padding-top: 30px;    
+}
+.brands a{
+border-right: 1px solid white;
+padding-right: 15px;
+margin-right: 15px;
+align-items: end;
+}
+.brands a:last-child {
+border-right: 0;
+padding-right: 0;
+margin-right: 0;
+}
+.category a {
+border: 1px solid grey;
+}
+
+.part1 {
+    display: flex;
+
+}
+.text {
+    display: flex;
+}
+.category{
+
+}
