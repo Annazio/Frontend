@@ -3,7 +3,6 @@
 const btn = document.querySelector('.btn')
 const square = document.querySelector('.square')
 btn.addEventListener('click', function() {
-    console.log('Новый цвет квадрата: ' + square.style.backgroundColor);
-    square.style.backgroundColor = 'blue'
-    
+        square.style.backgroundColor = 'blue'
+        console.log('Новый цвет квадрата: ' + square.style.backgroundColor);
 })
