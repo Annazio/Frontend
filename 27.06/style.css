@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.getBtn {
+    background-color: transparent;
+    border: 1px solid teal;
+    color: teal;
+    width: 110px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+    animation: anim 0.2s ease;
+    border-radius: 5px;
+    box-shadow: 1px 4px 10px 5px rgb(191, 203, 203);
+}
+
+.getBtn:hover {
+   box-shadow: none;
+   margin-top: 22px;
+}
+
+.inputId{
+    margin: 20px;
+    outline: teal;
+    border: 1px solid teal;
+    border-radius: 5px;
+    font-size: 24px;
+    padding: 2px 5px;
+    max-width: 180px;
+}
+
+.inputId::placeholder{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+}
+div{
+    margin-left: 20px;
+}
