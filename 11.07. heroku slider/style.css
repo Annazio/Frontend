@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --violett: #58488a;
+}
+#root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.background {
+  background-color: var(--violett);
+    max-height: 600px;
+    padding: 20px;
+        
+}
+.inputsContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.inputsContainer div{
+  color: white;
+  display: flex;
+  gap: 20px;
+  align-items: center; 
+  background-color: var(--violett);
+  cursor: pointer;
+}
+.left_btn, 
+.right_btn{
+  position: relative;
+  z-index: 10;
+  width: 30px;
+  height: 12px;
+}
+.left_btn:before, 
+.left_btn:after, 
+.right_btn:before, 
+.right_btn:after {
+  content: '';
+  height: 2px;
+  width: 20px;
+  background-color: white;
+  position: absolute;
+  z-index: 20;
+  left: 0;
+}
+.left_btn:before{
+  transform: rotate(-30deg);
+  top: 0;
+}
+.left_btn:after{
+  bottom: 0;
+  transform: rotate(30deg);
+}
+.right_btn:before{
+  transform: rotate(30deg);
+  top: 0;
+}
+.right_btn:after{
+  bottom: 0;
+  transform: rotate(-30deg);
+}
+
+
+.frame{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    gap: 50px;
+}
+
+.img {
+  max-width: 100%; 
+  max-height: 300px; 
+  object-fit: cover;
+}
+
+  .text {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+ 
+  .roundsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+    
+  }
+
+  .roundsContainer button {
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+  }
+  
