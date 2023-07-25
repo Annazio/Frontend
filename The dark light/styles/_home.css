@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,24 +14,20 @@
 ul,
 li {
  list-style: none;
-}
+} */
+
 .main{
-height: 100vh;
+padding: 100px 0;
 display: flex;
 align-items: center;
 background-color: var(--dark-blue);
 }
-.container{
-max-width: 1440px;
-width: 100%;
-padding: 0 15px;
-margin: 0 auto;
-}
+
 .wrapper{
 display: flex;
 justify-content: space-between;
 align-items: center;
-gap: 75px;
+gap: 20px;
 }
 .left__wrapper{
     color: var(--white);
@@ -91,35 +87,38 @@ text-align: left;
     display: flex;
     /* justify-content: space-between; */
     color: var(--white);
-    margin-top: 20px; /*как посчитать отступ?*/
+    margin-top: 40px; /*как посчитать отступ?*/
+    gap: 60px;
+
 }
 .number{
-    display: flex;
-    gap: 10px; /*как посчитать отступ? */
+    position: relative;
+    padding-left: 26px;
+    /* gap: 10px; как посчитать отступ? */
 }
 .number h4{
 font-family: Cardo;
 font-size: 24px;
 font-weight: 400;
-line-height: 29px;
-letter-spacing: 0.47999998927116394px;
+/* line-height: 29px; */
+letter-spacing: 0.5px;
 text-align: left;
 
 }
 
 
-section {
+/* span {
 	position: relative;
 	width: 100px;
 	height: 60px;
 	background-color: var(--dark-blue);
 	padding-left: 26px;
-}
+} */
 
-section::before {
+.number::before {
 	content: '';
 	position: absolute;
-	top: 0;
+	top: 4px;
 	left: 0;
 	width: 16px;
 	height: 16px;

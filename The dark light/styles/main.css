@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    --dark-blue: #1B3764;
+    --accent: #FFCA42;
+    --white: #fff;
+    --black: #000;
+    
+    --transition: .4s ease-in;
+    }
+    
+    ul,
+    li {
+        list-style: none;
+    }
+    .container{
+        max-width: 1440px;
+        width: 100%;
+        padding: 0 70px;
+        margin: 0 auto;
+    }
