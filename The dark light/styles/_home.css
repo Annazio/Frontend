@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    --dark-blue: #1B3764;
+    --accent: #FFCA42;
+    --white: #fff;
+    --black: #000;
+    
+    --transition: .4s ease-in;
+}
+    
+ul,
+li {
+ list-style: none;
+}
+.main{
+height: 100vh;
+display: flex;
+align-items: center;
+background-color: var(--dark-blue);
+}
+.container{
+max-width: 1440px;
+width: 100%;
+padding: 0 15px;
+margin: 0 auto;
+}
+.wrapper{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 75px;
+}
+.left__wrapper{
+    color: var(--white);
+}
+
+.welcome{
+font-family: Cardo;
+font-size: 21px;
+font-weight: 400;
+line-height: 36px;
+letter-spacing: 1.2000000476837158px;
+text-align: left;
+    
+}
+h2{
+font-family: Cardo;
+font-size: 63px;
+font-weight: 400;
+line-height: 78px;
+letter-spacing: 1.2999999523162842px;
+text-align: left;
+}
+p{
+font-family: Cardo;
+font-size: 21px;
+font-weight: 400;
+line-height: 36px;
+letter-spacing: 1.2000000476837158px;
+text-align: left;
+    
+}
+.action{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 51px;
+    margin-top: 30px;   /*как посчитать отступ?*/
+}
+
+.action button {
+	width: 222px;
+	height: 66px;
+	background-color: var(--accent);
+	color: var(--black);
+	cursor: pointer;
+}
+.action a{
+    text-decoration: none;
+    color: var(--white);
+    transition: color var(--transition);
+}
+.action a:hover {
+	color: var(--accent);
+}
+
+.values{
+    display: flex;
+    /* justify-content: space-between; */
+    color: var(--white);
+    margin-top: 20px; /*как посчитать отступ?*/
+}
+.number{
+    display: flex;
+    gap: 10px; /*как посчитать отступ? */
+}
+.number h4{
+font-family: Cardo;
+font-size: 24px;
+font-weight: 400;
+line-height: 29px;
+letter-spacing: 0.47999998927116394px;
+text-align: left;
+
+}
+
+
+section {
+	position: relative;
+	width: 100px;
+	height: 60px;
+	background-color: var(--dark-blue);
+	padding-left: 26px;
+}
+
+section::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 16px;
+	height: 16px;
+	background-color: var(--accent);
+	border-radius: 50%;
+}
+.right__wrapper{
+    height: 100%;
+}
+.right__wrapper img {
+    max-width: 100%;
+    height: auto; 
+}
