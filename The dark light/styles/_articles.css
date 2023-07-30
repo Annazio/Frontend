@@ -1,42 +1,24 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-    --dark-blue: #1B3764;
-    --accent: #FFCA42;
-    --white: #fff;
-    --black: #000;
-    
-    --transition: .4s ease-in;
-}
-    
+  
 .main{
-height: 2089px; 
 display: flex;
 align-items: center;
 background-color: var(--dark-blue);
 }
-.container{
-max-width: 1440px;
-width: 100%;
-padding: 0 15px;
-margin: 0 auto;
-}
+
 .learn__wrapper{
     background-color: var(--white);
-    padding: 109px 0 80px; /*как посчитать?*/
+    padding: 110px 0 80px; 
 }
 .title__wrapper{
-    padding-bottom: 80px;
-    margin: 109px, 70px, 80px;
+    padding: 80px;
+    margin: 109px 70px 80px;
 }
 h3{
 font-family: Cardo;
 font-size: 42px;
 font-weight: 400;
 line-height: 50px;
-letter-spacing: 0em;
+letter-spacing: 0;
 text-align: center;
 color: var(--dark-blue);
 }
@@ -51,17 +33,28 @@ color: var(--dark-blue);
 .learn__items{
     display: flex;
     flex-wrap: wrap; 
-    justify-content: space-around;    
-    Width: 665.45px;
-    width: 665px;
-    max-width: 100%;
+    gap: 30px;    
+    max-width: 630px;
 }
-.learn-item{
+.learn__item{
     background-color: #F4F8FF;
-    width: 303px;
-    height: 272px;
+    width: 300px;
+    min-height: 272px;
+    padding: 30px;
 }
+.circle {
+    display: block;
+    border-radius: 50%;
+    width: 50px;
+	height: 50px;
+    background-color: var(--accent);
+    text-align: center;
+    font-size: 23px;
+    line-height: 50px;
+}
+
 .learn__item_text{
+    margin-top: 30px;
     font-family: Cardo;
     font-size: 24px;
     font-weight: 400;
@@ -69,7 +62,6 @@ color: var(--dark-blue);
     letter-spacing: 0em;
     text-align: left;
     color: var(--dark-blue);
-    
 }
 
 .learn__img{
@@ -82,36 +74,26 @@ color: var(--dark-blue);
 
 .articles__wrapper{
     background-color: #F4F8FF;
-    padding: 110px, 70px;
+    padding: 110px 70px;
 }
 
 .people__wrapper{
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
+    
+    
 }
 
-
-section {
-	position: relative;
-	width: 100px;
-	height: 60px;
-	background-color:  #F4F8FF;
-	padding-left: 26px;
+.people__item{
+  max-width: 300px; 
+  border-radius: 20px; 
+  padding: 20px;
 }
 
-section::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 50px;
-	height: 50px;
-	background-color: var(--accent);
-	border-radius: 50%;
+.people__item img{
+    max-width: 300px;   
 }
-
-h6{
+.people__title{
 font-family: Cardo;
 font-size: 24px;
 font-weight: 400;
@@ -140,3 +122,4 @@ text-align: left;
 color: var(--dark-blue);      
 text-align: right;
 }
+

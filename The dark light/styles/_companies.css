@@ -1,22 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-    --dark-blue: #1B3764;
-    --accent: #FFCA42;
-    --white: #fff;
-    --black: #000;
-    
-    --transition: .4s ease-in;
-}
-
-.container{
-    max-width: 1440px;
-    width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
-}
 h3{
 font-family: Cardo;
 font-size: 42px;
@@ -28,8 +9,9 @@ color: var(--dark-blue);
 }
 .companies{
     display: flex;
-    justify-content: center;
-    gap: 16px;
+    justify-content: space-between;
+    margin-top: 40px;
+    
 }
 h6{
     font-family: Cardo;
@@ -39,6 +21,7 @@ h6{
     letter-spacing: 0em;
     text-align: center;
     color: var(--dark-blue);
+    margin-bottom: 10px;
 }
 .company__item{
 font-family: Inter;
@@ -53,6 +36,9 @@ color: #969AA0;
 display: flex;
 justify-content: center;
 background-color: var(--dark-blue);
+/* gap: 130px; */
+
+/* padding: 30px 0; */
 }
 .get__book{
     font-family: Cardo;
@@ -71,4 +57,9 @@ color: var(--white);
     letter-spacing: 0em;
     text-align: left;
     color: #B4C7E7;
+}
+.left__wrapper{
+    padding: 140px 70px 228px;
+    /* width: 100%; */
+
 }

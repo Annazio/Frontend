@@ -1,21 +1,3 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-    --dark-blue: #1B3764;
-    --accent: #FFCA42;
-    --white: #fff;
-    --black: #000;
-    
-    --transition: .4s ease-in;
-}
-    
-ul,
-li {
- list-style: none;
-} */
-
 .main{
 padding: 100px 0;
 display: flex;
@@ -30,7 +12,14 @@ align-items: center;
 gap: 20px;
 }
 .left__wrapper{
-    color: var(--white);
+color: var(--white);
+}
+
+.center__line{
+display: block;
+width: 35px;
+height: 2px;
+background-color: var(--accent);  
 }
 
 .welcome{
@@ -40,6 +29,10 @@ font-weight: 400;
 line-height: 36px;
 letter-spacing: 1.2000000476837158px;
 text-align: left;
+display: flex;
+justify-content: start;
+align-items: center;
+gap: 14px;
     
 }
 h2{
@@ -60,60 +53,49 @@ text-align: left;
     
 }
 .action{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 51px;
-    margin-top: 30px;   /*как посчитать отступ?*/
+display: flex;
+justify-content: start;
+align-items: center;
+gap: 51px;
+margin-top: 30px;   
 }
 
 .action button {
-	width: 222px;
-	height: 66px;
-	background-color: var(--accent);
-	color: var(--black);
-	cursor: pointer;
+width: 222px;
+height: 66px;
+background-color: var(--accent);
+color: var(--black);
+cursor: pointer;
 }
 .action a{
-    text-decoration: none;
-    color: var(--white);
-    transition: color var(--transition);
+text-decoration: none;
+color: var(--white);
+transition: color var(--transition);
 }
 .action a:hover {
 	color: var(--accent);
 }
 
 .values{
-    display: flex;
-    /* justify-content: space-between; */
-    color: var(--white);
-    margin-top: 40px; /*как посчитать отступ?*/
-    gap: 60px;
+display: flex;
+color: var(--white);
+margin-top: 40px;
+gap: 60px;
 
 }
 .number{
-    position: relative;
-    padding-left: 26px;
-    /* gap: 10px; как посчитать отступ? */
+position: relative;
+padding-left: 26px;
+    
 }
 .number h4{
 font-family: Cardo;
 font-size: 24px;
 font-weight: 400;
-/* line-height: 29px; */
 letter-spacing: 0.5px;
 text-align: left;
 
 }
-
-
-/* span {
-	position: relative;
-	width: 100px;
-	height: 60px;
-	background-color: var(--dark-blue);
-	padding-left: 26px;
-} */
 
 .number::before {
 	content: '';
