@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Khula;
+}
+.subheader{
+    color: #bdbdbd;
+    font-size: 24px;
+}
+h2{
+    font-size: 48px;
+}
+.btn{
+    padding: 10px 20 px;
+    border: 2px solid #222222;
+    border-radius: 50px;
+}
+.wrapper{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: #222222;
+    text-transform: uppercase;
+    }
+nav{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .links{
+    display: flex;
+    gap: 10px;
+}
+#spezialisation{
+    background-color: #ebebeb;
+    padding: 140px 0;
+}
+#spezialisation .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1 fr));
+    grid-auto-rows: 360px;
+    gap: 30px;
+}
+#spezialisation .container > div{
+    border: 2px solid black;
+    background-image: url(./media/Rectangle\ 2.png);
+    padding: 45px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#spezilisation .container p{
+    font-size: 24px;
+}
+#spezialisation .btn{
+    border-color: white;
+    color: white;
+}
+
+#about_us{
+    padding: 160px 0;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 125px;
+}
+#about_us h2{
+    margin: 40px 0;
+}
+#about_us .company_title{
+    display: block;
+    color: blue;
+}
+#about_us .text{
+    font-weight: 300;
+}
+#about_us .achievements{
+    display: grid;
+    grid-template-columns: repeat(2, 255px);
+    grid-template-rows: 255px;
+    gap: 30px;
+}
+#about_us .achievements > div{
+    background-color: #ebebeb;
+}
+@media (max-width: 940px) {
+   nav .links, nav .btn{
+    display: none;
+   }
+}
+@media (max-width: 730px){
+    #spezialisation .container.btn{
+    display: none;
+    }
+    #spezialisation .container > div{
+        justify-content: flex-end;
+    }
+}
