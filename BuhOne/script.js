@@ -28,7 +28,7 @@ headTitles.forEach(elem=>{
     const titleField = document.createElement('p');
     titleField.classList.add('item__title')
     titleField.innerText = elem
-
+ 
 
     sliderItem.append(titleField)
     sliderHeadWraper.append(sliderItem)
@@ -42,11 +42,12 @@ function firstSlider(){
     images.forEach(item => {
         //item.style.width = width + 'px';
         //item.style.height = 'auto';
-                item.style.width = '589px';
+                // item.style.width = '589px';
+                item.style.width = '100%';
                 item.style.height = `117px`;
                 item.style.objectFit = "content"
     });
-    rollSlider()
+    nextSlider()
 }
 
 
@@ -78,16 +79,111 @@ function nextSlider() {
 
 
 
-// 2. Slider
+// // 2. Slider
+// let image = new Image();
+
+// let image = "./media/person.png"; 
+
+
+
 
 const reviewTexts = [
-    'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. ',
-    'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. ',
-    'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. ',
-    'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. '
+    {text:  'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. ',
+     image: "./media/person.png",
+     name: 'Федор Петров',
+     position: 'Директор ООО “Три-четыре”'
+     },
+     {text:  'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. ',
+     image: "./media/person.png",
+     name: 'Алла Сидороваа',
+     position: 'Директор ООО “Пять-шесть”'
+     },
+     {text:  'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. ',
+     image: "./media/person.png",
+     name: 'Екатерина Иванова',
+     position: 'Директор ООО “Раз-два”'
+     },
+     {text:  'Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. ',
+     image: "./media/person.png",
+     name: 'Иван Иванов',
+     position: 'Директор ООО “Семь-восемь”'
+     },
 ]
 
 
+const reviewSliderWrapper = document.querySelector(".review__slider__wrapper");
+
+
+
+reviewTexts.forEach(elem=>{
+    const slide = document.createElement('div');
+    slide.classList.add('review__slide')
+    const sliderText = document.createElement('p');
+    sliderText.classList.add('slider_text');
+    const personWrapper = document.createElement('div');
+    personWrapper.classList.add('person_wrapper');
+    const personImage = document.createElement('img');
+    const namePosWrapper = document.createElement('div');
+    const personName = document.createElement('p');
+    personName.classList.add('person_name');
+    const personPosition = document.createElement('p');
+    personPosition.classList.add('person_position');
+   
+
+    sliderText.innerText = elem.text;
+    personImage.src = elem.image;
+    personName.innerText = elem.name;
+    personPosition.innerText = elem.position;
+
+    personWrapper.append(personImage, namePosWrapper)
+    namePosWrapper.append(personName, personPosition);
+    slide.append(sliderText, personWrapper, namePosWrapper)
+    // reviewSliderWrapper.append(sliderText);
+    reviewSliderWrapper.append(slide)
+
+
+})
+
+
+// function thirdSlider(){
+//     width = document.querySelector('.slider').offsetWidth;
+//     sliderLine.style.width = width * reviewTexts.length + 'px';
+//     reviewTexts.forEach(item => {
+//         //item.style.width = width + 'px';
+//         //item.style.height = 'auto';
+//                 item.style.width = '100%';
+//                 item.style.height = `117px`;
+//                 item.style.objectFit = "content"
+//     });
+//     showSlider()
+// }
+
+
+// window.addEventListener('resize', secondSlider);
+// thirdSlider()
+
+
+// document.querySelector('.pre').addEventListener('click', function(){
+//     count--;
+//     if (count < 0) {
+//         count = reviewTexts.length -1;
+//     }
+//     showSlider();
+// });
+
+
+
+// document.querySelector('.ne').addEventListener('click', function(){
+//     count++;
+//     if (count >= reviewTexts.length) {
+//         count = 0;
+//     }
+//     showSlider();
+// });
+
+// function schowSlider() {
+//     reviewSliderWrapper.style.transform = 'translate(-'+count * width + 'px)';
+// }
 
 
 
