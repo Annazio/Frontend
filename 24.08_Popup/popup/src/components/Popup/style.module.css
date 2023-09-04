@@ -1,0 +1,37 @@
+.popup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7) ;
+    
+}
+
+.popupContent{
+    width: 500px;
+    height: 500px;
+    padding: 50px;
+    position: relative;
+    background-color: white;
+    
+}
+.closed{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: salmon;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+.popup ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: start;
+    align-items: center;
+}
